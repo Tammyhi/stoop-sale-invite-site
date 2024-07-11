@@ -1,4 +1,17 @@
-// Initialize and add the map
+// Code for Like Button
+let heartbtn = document.getElementById("heart-btn");
+function toggleLike(){
+    if(heartbtn.style.color == "grey"){
+        heartbtn.style.color = "red";
+    }
+    else{
+        heartbtn.style.color = "grey";
+    }
+    // <i class="fa-solid fa-heart" style="color: #d80ea5;"></i>
+} 
+
+
+// Code for Google Map API
 let map;
 
 async function initMap() {

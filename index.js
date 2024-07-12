@@ -1,35 +1,34 @@
 // Code for Like Button
 let heartbtn = document.getElementById("heart-btn");
 
-function toggleLike(){
-    if(heartbtn.style.color != "var(--accent-color)"){
-        heartbtn.style.color = "var(--accent-color)";
-    }
-    else{
-        heartbtn.style.color = "#E10A7E";
-    }
-    // <i class="fa-solid fa-heart" style="color: #d80ea5;"></i>
-} 
-
+function toggleLike() {
+  if (heartbtn.style.color != "var(--accent-color)") {
+    heartbtn.style.color = "var(--accent-color)";
+  } else {
+    heartbtn.style.color = "#E10A7E";
+  }
+  // <i class="fa-solid fa-heart" style="color: #d80ea5;"></i>
+}
 
 //Code for Share Buttons
-const link = 'https://fontawesome.com/icons/square-facebook?f=brands&s=solid';
+const link = "https://fontawesome.com/icons/square-facebook?f=brands&s=solid";
 //encodeURI(window.location.href);
-const shareMsg = encodeURIComponent("Who wants to go to this stoop sale with me?");
-const title = encodeURIComponent(document.querySelector('title').textContent);
+const shareMsg = encodeURIComponent(
+  "Who wants to go to this stoop sale with me?"
+);
+const title = encodeURIComponent(document.querySelector("title").textContent);
 
-const shareLink = document.querySelector('.link');
+const shareLink = document.querySelector(".link");
 shareLink.href = link;
 
-const fb = document.querySelector('.fb');
+const fb = document.querySelector(".fb");
 fb.href = `https://www.facebook.com/share.php?u=${link}`;
 
-const x = document.querySelector('.x');
+const x = document.querySelector(".x");
 x.href = `http://x.com/share?&url=${link}&text=${shareMsg}&hashtags=stoopSale`;
 
-const whatsapp = document.querySelector('.whatsApp');
+const whatsapp = document.querySelector(".whatsApp");
 whatsapp.href = `https://wa.me/?text=${shareMsg}: ${link}`;
-
 
 // Code for Google Map API
 let map;
@@ -44,8 +43,7 @@ async function initMap() {
   const PinImg = document.createElement("img");
   PinImg.height = 62;
   PinImg.width = 64;
-  PinImg.src =
-    "marker.png";
+  PinImg.src = "marker.png";
 
   // Set location and zoom level of the map
   map = new Map(document.getElementById("map"), {

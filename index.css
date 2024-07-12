@@ -77,6 +77,8 @@ body {
   width: 100%;
   height: 200px;
   margin-top: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
 }
 
 /*Styling for buttons*/
@@ -87,7 +89,8 @@ button {
   outline: none;
 }
 
-button:hover {
+button:hover,
+#map:hover {
   transform: scale(0.96);
   cursor: pointer;
 }
@@ -145,9 +148,9 @@ button:hover {
     gap: 2vw;
   }
 
-   .btns{
+  .btns {
     margin: 0 2vw;
-   }
+  }
 
   /* Display the two images next to each other */
   figure {
@@ -155,7 +158,7 @@ button:hover {
     margin: 20px auto;
     justify-content: space-between;
   }
-  
+
   .responsive-img {
     width: 49%;
   }

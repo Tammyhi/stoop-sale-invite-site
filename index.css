@@ -68,6 +68,7 @@ h2 {
 
 #desc {
   font-size: clamp(1rem, 1.5vw + 0.5rem, 2.5rem);
+  margin: clamp(1rem, 5%, 5rem) clamp(2rem, 16%, 8rem);
 }
 
 .em{
@@ -89,8 +90,8 @@ figcaption, #map-caption{
 /* Styling for map displays*/
 #map {
   width: 100vw;
-  height: 200px;
-  margin-top: 10px;
+  height: 50vh;
+  margin-top: 3vh;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s ease;
 }
@@ -117,7 +118,8 @@ button:hover,
   align-items: center;
   justify-content: center;
   gap: 10px;
-  margin: 0 1vw;
+  margin: 3vw;
+
 }
 
 #share-btns {
@@ -141,10 +143,6 @@ button:hover,
     gap: 2vw;
   }
 
-  .btns {
-    margin: 3vw;
-  }
-
   .btns i{
     font-size: 8vw;
   }
@@ -162,6 +160,22 @@ button:hover,
   figure div{
     display: flex;
     flex-direction: column;
+  }
+
+  #map-and-desc{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5vw;
+  }
+
+  #fullMap, #map, #desc{
+    width: 40vw;
+  }
+
+  #desc{
+    margin: 0;
   }
 }
 

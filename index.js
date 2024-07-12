@@ -1,5 +1,6 @@
 // Code for Like Button
 let heartbtn = document.getElementById("heart-btn");
+
 function toggleLike(){
     if(heartbtn.style.color == "grey"){
         heartbtn.style.color = "red";
@@ -11,25 +12,42 @@ function toggleLike(){
 } 
 
 
+//Code for Share Buttons
+const link = 'https://fontawesome.com/icons/square-facebook?f=brands&s=solid';
+//encodeURI(window.location.href);
+const shareMsg = encodeURIComponent("Who wants to go to this stoop sale with me?");
+const title = encodeURIComponent(document.querySelector('title').textContent);
+
+const shareLink = document.querySelector('.link');
+shareLink.href = link;
+
+const fb = document.querySelector('.fb');
+fb.href = `https://www.facebook.com/share.php?u=${link}`;
+
+const x = document.querySelector('.x');
+x.href = `http://x.com/share?&url=${link}&text=${shareMsg}&hashtags=stoopSale`;
+
+const whatsapp = document.querySelector('.whatsApp');
+whatsapp.href = `https://wa.me/?text=${shareMsg}: ${link}`;
+
+
 // Code for Google Map API
 let map;
 
 async function initMap() {
-  // The location of Uluru
+  // Closest matching location I could find on Google Map
   const position = { lat: 40.6813827, lng: -73.9960086 };
-  // Request needed libraries.
-  //@ts-ignore
   const { Map } = await google.maps.importLibrary("maps");
   const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
 
-  // A marker with a with a URL pointing to a PNG.
+  // Customizing the marker image and its size
   const PinImg = document.createElement("img");
   PinImg.height = 50;
   PinImg.width = 50;
   PinImg.src =
     "https://cdn-icons-png.flaticon.com/512/3205/3205438.png";
 
-  // The map, centered at Uluru
+  // Set location and zoom level of the map
   map = new Map(document.getElementById("map"), {
     zoom: 15,
     center: position,
@@ -37,7 +55,7 @@ async function initMap() {
     disableDefaultUI: true,
   });
 
-  // The marker, positioned at Uluru
+  // The marker of the map
   const marker = new AdvancedMarkerElement({
     map: map,
     position: position,

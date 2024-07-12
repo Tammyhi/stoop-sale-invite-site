@@ -56,6 +56,16 @@ button{
 i{
     font-size: 3rem;
 }
-button:hover{
+a:hover, button:hover{
     cursor: pointer;
+}
+
+@media (min-width: 720px){
+    .responsive-img{
+        width: 50%;
+    }
+
+    figure{
+        display: flex;
+    }
 }

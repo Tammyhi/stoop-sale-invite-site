@@ -2,11 +2,11 @@
 let heartbtn = document.getElementById("heart-btn");
 
 function toggleLike(){
-    if(heartbtn.style.color == "grey"){
-        heartbtn.style.color = "red";
+    if(heartbtn.style.color != "var(--accent-color)"){
+        heartbtn.style.color = "var(--accent-color)";
     }
     else{
-        heartbtn.style.color = "grey";
+        heartbtn.style.color = "#E10A7E";
     }
     // <i class="fa-solid fa-heart" style="color: #d80ea5;"></i>
 } 

@@ -1,6 +1,5 @@
 /*Import font to use for heading and regular text*/
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Permanent+Marker&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Permanent+Marker&display=swap");
 
 /* Remove default margin, padding, and change box-sizing*/
 * {
@@ -11,10 +10,10 @@
 
 /*Color Palette*/
 :root {
-  --bkgd-color: #F5F5F5;
-  --primary-color: #2C3E50;
-  --secondary-color: #E74C3C;
-  --accent-color: #3498dB;
+  --bkgd-color: #f5f5f5;
+  --primary-color: #2c3e50;
+  --secondary-color: #e74c3c;
+  --accent-color: #6c78e0;
   --heart-color: #dbd3d9;
 }
 
@@ -26,10 +25,10 @@ html {
   font-family: "Kalam", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#date{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+#date {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 h1 {
@@ -38,7 +37,8 @@ h1 {
   line-height: 1;
   font-weight: 700;
   margin-bottom: 10px;
-  font-family: "Permanent Marker", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Permanent Marker", "Segoe UI", Tahoma, Geneva, Verdana,
+    sans-serif;
 }
 
 h2 {
@@ -81,14 +81,14 @@ body {
 }
 
 /*Styling for buttons*/
-button{
+button {
   background: transparent;
   transition: transform 0.2s ease;
   border: none;
   outline: none;
 }
 
-button:hover{
+button:hover {
   transform: scale(0.96);
   cursor: pointer;
 }
@@ -98,12 +98,15 @@ button:hover{
   align-items: center;
   justify-content: space-between;
   color: var(--button-color);
-  height: 5rem;
 }
 
 #share-btns {
-    gap: 10px;
-  }
+  gap: 10px;
+}
+
+#share-btns i {
+  font-size: 10vw;
+}
 
 #heart-btn {
   display: flex;
@@ -114,42 +117,43 @@ button:hover{
   width: 15vw;
   font-size: 1.75rem;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  color: var(--accent-color);
 }
 
-i {
+#heart-btn i {
   font-size: 10vw;
 }
 
-
-
 /* Media Query to adjust format of images to 2 columns */
 @media (min-width: 720px) {
-  /*html{
-    margin: clamp(2rem,16%,8rem);
-   }*/
-
-  .responsive-img {
-    width: 49%;
-  }
-
-  #heart-btn{
+  /* Adjust sizes of fa-icons and like button */
+  #heart-btn {
     height: 10vw;
     width: 10vw;
   }
 
-  i{
+  #share-btns i {
     font-size: 8vw;
   }
+  #heart-btn i {
+    font-size: 5vw;
+  }
 
+  /* Display the two images next to each other */
   figure {
     display: flex;
     margin: 20px auto;
     justify-content: space-between;
   }
+  
+  .responsive-img {
+    width: 49%;
+  }
 }
 
 @media (min-width: 1000px) {
-    h2{
-        line-height: 2.5rem;
-    }
+  /* Increase line height of h2 element */
+  h2 {
+    line-height: 2.5rem;
+  }
 }

@@ -49,9 +49,9 @@ async function initMap() {
 
   // Set location and zoom level of the map
   map = new Map(document.getElementById("map"), {
-    zoom: 15,
+    zoom: 16,
     center: position,
-    mapId: "SALE_LOCO",
+    mapId: "STOOP_SALE_LOCO",
     disableDefaultUI: true,
   });
 

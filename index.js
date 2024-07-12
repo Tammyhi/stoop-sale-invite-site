@@ -5,10 +5,11 @@ function toggleLike() {
   if (heartbtn.style.color != "var(--accent-color)") {
     heartbtn.style.color = "var(--accent-color)";
   } else {
-    heartbtn.style.color = "#E10A7E";
+    heartbtn.style.color = "var(--secondary-color)";
   }
   // <i class="fa-solid fa-heart" style="color: #d80ea5;"></i>
 }
+
 
 //Code for Share Buttons
 const link = "https://fontawesome.com/icons/square-facebook?f=brands&s=solid";
@@ -29,6 +30,7 @@ x.href = `http://x.com/share?&url=${link}&text=${shareMsg}&hashtags=stoopSale`;
 
 const whatsapp = document.querySelector(".whatsApp");
 whatsapp.href = `https://wa.me/?text=${shareMsg}: ${link}`;
+
 
 // Code for Google Map API
 let map;

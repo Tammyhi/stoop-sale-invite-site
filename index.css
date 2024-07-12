@@ -20,16 +20,17 @@
 /* Set default color, font-size, and other properties */
 html {
   color: var(--bkgd-color);
-  margin: clamp(2rem, 16%, 8rem);
+  margin: clamp(1rem, 5%, 5rem) clamp(2rem, 16%, 8rem);
   font-size: 18px;
   font-family: "Kalam", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   scroll-behavior: smooth;
 }
 
-#date {
+/* Styling for text and content elements*/
+body {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
+  color: var(--primary-color);
 }
 
 h1 {
@@ -48,37 +49,42 @@ h2 {
   line-height: 2rem;
 }
 
-body {
+#date {
   display: flex;
-  flex-direction: column;
-  color: var(--primary-color);
-}
-
-#map-caption {
-  font-size: clamp(0.75rem, 1vw + 0.5rem, 2rem);
-  margin: 5px auto;
-  color: var(--secondary-color);
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 #desc {
   font-size: clamp(1rem, 1.5vw + 0.5rem, 2.5rem);
-  margin-bottom: 10px;
+}
+
+.em{
+    color: var(--secondary-color);
 }
 
 /*Styling for the images*/
 .responsive-img {
-  height: auto;
   width: 100%;
-  margin-bottom: 10px;
 }
 
-/* Set size of Google Map display*/
+figcaption, #map-caption{
+    font-size: clamp(0.75rem, 1vw + 0.5rem, 2rem);
+    text-align: center;
+}
+
+/* Styling for map displays*/
 #map {
   width: 100%;
   height: 200px;
   margin-top: 10px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s ease;
+}
+
+#map-caption {
+  margin: 5px auto;
+  color: var(--secondary-color);
 }
 
 /*Styling for buttons*/
@@ -98,8 +104,8 @@ button:hover,
 .btns {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  color: var(--button-color);
+  justify-content: center;
+  gap: 10px;
   margin: 0 1vw;
 }
 
@@ -108,59 +114,45 @@ button:hover,
   gap: 10px;
 }
 
-#share-btns i {
+#share-btns i{
+    color: var(--accent-color);
+}
+
+.btns i {
   font-size: 10vw;
-  color: var(--accent-color);
 }
 
 #heart-btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
-  height: 15vw;
-  width: 15vw;
-  font-size: 1.75rem;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  color: var(--accent-color);
 }
 
-#heart-btn i {
-  font-size: 10vw;
-}
 
 /* Media Query to adjust format of images to 2 columns */
 @media (min-width: 720px) {
   /* Adjust sizes and of fa-icons and buttons*/
-  #heart-btn {
-    height: 10vw;
-    width: 10vw;
-  }
-
-  #share-btns i {
-    font-size: 8vw;
-  }
-  #heart-btn i {
-    font-size: 5vw;
-  }
-
   #share-btns {
     gap: 2vw;
   }
 
   .btns {
-    margin: 0 2vw;
+    margin: 3vw;
+  }
+
+  .btns i{
+    font-size: 8vw;
   }
 
   /* Display the two images next to each other */
   figure {
     display: flex;
-    margin: 20px auto;
     justify-content: space-between;
   }
 
-  .responsive-img {
-    width: 49%;
+  figure div{
+    display: flex;
+    flex-direction: column;
   }
 }
 

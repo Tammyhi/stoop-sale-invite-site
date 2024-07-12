@@ -11,6 +11,7 @@
     <title>Stoop Sale Invite</title>
   </head>
   <body>
+    <!-- Header Section -->
     <header>
       <h1>Uncover Unique Finds at Our Stoop Sale</h1>
       <div id="date">
@@ -18,12 +19,16 @@
         <h2>10am - 4pm</h2>
       </div>
     </header>
+
+    <!-- Map Section -->
     <a
       href="https://www.google.com/maps/place/Court+St,+Brooklyn,+NY/@40.6810643,-73.9978157,17z/data=!3m1!4b1!4m6!3m5!1s0x89c25a59afc74fe1:0x3dc42dbcd7f6d772!8m2!3d40.6810643!4d-73.9965256!16s%2Fg%2F1ypmn1jwc?entry=ttu"
     >
       <div id="map"></div>
     </a>
     <p id="map-caption">Corner of Court Street and 2nd Avenue, Carroll Gardens, Brooklyn, NY</p>
+    
+    <!-- Description -->
     <p id="desc">
       Attention bargain hunters! This stoop sale in Brooklyn is an event you
       won't want to miss. Browse an array of gently used, high-quality items at
@@ -32,11 +37,14 @@
       amazing deals and discover one-of-a-kind pieces right in your own
       community.
     </p>
+
+    <!-- Images -->
     <figure>
-        <img class="responsive-img" src="hangers.jpg" alt="A close up shot of a row of clothes on hangers." />
-        <img class="responsive-img" src="clothes.JPG" alt="A person's arm reaching out to a piece of clothing on a rack." />
+        <img class="responsive-img" src="fashion07.jpg" alt="An illustration of a girl trying on shoes and taking a picture." />
+        <img class="responsive-img" src="fashion02.jpg" alt="An illustration of various items of clothing." />
     </figure>
     
+    <!-- Buttons Section -->
     <section class="btns">
         <button onclick="toggleLike()" style="color: var(--accent-color);" id="heart-btn" class="btn"><i class="fa-solid fa-heart"></i></i></button>
         <div id="share-btns">
@@ -49,7 +57,7 @@
     
     <!-- Scripts below -->
     <script src="https://kit.fontawesome.com/d6f5b3e8a3.js" crossorigin="anonymous"></script>
-    <script>
+    <script async defer>
       ((g) => {
         var h,
           a,

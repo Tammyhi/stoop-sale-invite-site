@@ -42,10 +42,10 @@ async function initMap() {
 
   // Customizing the marker image and its size
   const PinImg = document.createElement("img");
-  PinImg.height = 64;
+  PinImg.height = 62;
   PinImg.width = 64;
   PinImg.src =
-    "https://cdn-icons-png.flaticon.com/512/3205/3205438.png";
+    "marker.png";
 
   // Set location and zoom level of the map
   map = new Map(document.getElementById("map"), {

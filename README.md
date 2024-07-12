@@ -39,6 +39,7 @@ https://stoop-sale-invite-site-g09dj5xx8-tammyhis-projects.vercel.app
 - Give this page a like!
 
 # Credits:
-- Map API: Google Maps
+- Map API from Google Maps
 - Illustrations by Drawkit
 - Map Marker by Freepik
+- Icons from Font Awesome

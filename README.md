@@ -3,8 +3,13 @@
 # Overview:
 This project was made for CodeDex's Summer Hackathon from 7/10/24 to 7/11/24. It is an interactive invitation for a Brooklyn Stoop Sale. The invitation has a map and sharing functionality, as well as interactive elements.
 
+# Tech Stack (All vanilla!)
+- HTML
+- CSS
+- Javascript
+
 # Features:
-- Interactive Elements: Make the
+- Interactive Elements: Adds a splash of fun to the invitation
   * Hover animations for buttons and map
   * Color changes when like button is clicked
 - Content: Tells the reader when and where the stoop sell is being held, as well as why they should come
@@ -19,6 +24,10 @@ This project was made for CodeDex's Summer Hackathon from 7/10/24 to 7/11/24. It
     - WhatsApp
     - X / Twitter
   * Copy website link to clipboard
+- Aesthetics: Gotta set a vibe
+ * Color Scheme - utilizes the pastel-like colors from the illustrations 
+ * Typography - hand-drawn fonts
+ * Imagery - hand-drawn fashion illustrations
 
 # Try it out!
 https://stoop-sale-invite-site-g09dj5xx8-tammyhis-projects.vercel.app

@@ -25,9 +25,9 @@ This project was made for CodeDex's Summer Hackathon from 7/10/24 to 7/11/24. It
     - X / Twitter
   * Copy website link to clipboard
 - Aesthetics: Gotta set a vibe
- * Color Scheme - utilizes the pastel-like colors from the illustrations 
- * Typography - hand-drawn fonts
- * Imagery - hand-drawn fashion illustrations
+  * Color Scheme - utilizes the pastel-like colors from the illustrations 
+  * Typography - hand-drawn fonts
+  * Imagery - hand-drawn fashion illustrations
 
 # Try it out!
 https://stoop-sale-invite-site-g09dj5xx8-tammyhis-projects.vercel.app

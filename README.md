@@ -1,7 +1,7 @@
 # Brooklyn Stoop Sale Invitation
 
 # Overview:
-This project was made for CodeDex's Summer Hackathon from 7/10/24 to 7/11/24. It is an interactive invitation for a Brooklyn Stoop Sale. The invitation has a map and sharing functionality, as well as interactive elements.
+This project was made for CodeDex's Summer Hackathon from 7/11/24 to 7/12/24. It is an interactive invitation for a Brooklyn Stoop Sale. The invitation has a map and sharing functionality, as well as interactive elements.
 
 # Tech Stack (All vanilla!)
 - HTML
